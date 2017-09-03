@@ -1,34 +1,17 @@
-# vagrant-lamp-sample
+# compayreport
+会社への勤怠メール送信を自動化するためのアプリケーション
 
-- see also: [http://www.1x1.jp/blog/2013/10/vagrant-lapp-sample.html](http://www.1x1.jp/blog/2013/10/vagrant-lapp-sample.html)
-	- Forked from this sample
+## Features
 
-## Vagrant
+- ユーザ情報設定
+- メール送信情報設定
+- メール送信
 
-Using VirtualBox and Vagrant
-
-- [VirtualBox](https://www.virtualbox.org/)
-- [Vagrant](http://www.vagrantup.com/)
-
+## Vagrant Envrionment
+以下、フローで環境構築可能。
 ```
-$ vagrant plugin install vagrant-vbguest
-```
-
-## Usage
-
-```
-$ git clone https://github.com/monsat/vagrant-lamp-sample
-$ cd vagrant-lamp-sample/vagrant
+$ cd vagrant
 $ vagrant up
 ```
-
-### Web Application
-
 http://192.168.33.40/
 
-## Before starting your own project
-
-You need to
-
-- ~~change security salt and security cipher seed on app/Config/core.php~~ (Now, baking project is working)
-- change hostname and vbname on vagrant/Vagrantfile
